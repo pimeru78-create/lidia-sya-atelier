@@ -1,16 +1,5 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Hero video: nudge playback on mobile browsers that ignore the autoplay attribute
-const heroVideo = document.getElementById('heroVideo');
-if (heroVideo) {
-  const tryPlay = () => heroVideo.play().catch(() => {});
-  tryPlay();
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
-  ['touchstart', 'click'].forEach(evt => {
-    document.addEventListener(evt, tryPlay, { once: true, passive: true });
-  });
-}
-
 // Sticky header shadow on scroll
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -51,6 +40,15 @@ function showDelta(delta) {
 }
 
 galleryImgs.forEach((img, i) => img.addEventListener('click', () => openLightbox(i)));
+
+// Gallery horizontal scroll arrows
+const galleryGrid = document.getElementById('galleryGrid');
+document.getElementById('galleryPrev').addEventListener('click', () => {
+  galleryGrid.scrollBy({ left: -galleryGrid.clientWidth * 0.8, behavior: 'smooth' });
+});
+document.getElementById('galleryNext').addEventListener('click', () => {
+  galleryGrid.scrollBy({ left: galleryGrid.clientWidth * 0.8, behavior: 'smooth' });
+});
 document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
 document.getElementById('lightboxPrev').addEventListener('click', () => showDelta(-1));
 document.getElementById('lightboxNext').addEventListener('click', () => showDelta(1));

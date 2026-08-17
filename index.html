@@ -53,7 +53,7 @@
 <main id="top">
 
   <section class="hero">
-    <img class="hero__ambient" src="images/img04.jpg" alt="" loading="eager">
+    <img class="hero__ambient" src="images/img01.jpg" alt="" loading="eager">
     <div class="hero__overlay"></div>
     <div class="container hero__inner">
       <div class="hero__text">
@@ -73,9 +73,7 @@
         </div>
       </div>
       <div class="hero__media">
-        <video id="heroVideo" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="images/hero-poster.jpg">
-          <source src="video/hero.mp4" type="video/mp4">
-        </video>
+        <img src="images/img01.jpg" alt="Лидия Ся">
       </div>
     </div>
     <a href="#about" class="hero__scroll" aria-label="Листать вниз">↓</a>
@@ -144,21 +142,24 @@
     <div class="container">
       <p class="eyebrow center">Галерея</p>
       <h2 class="center">Образы наших гостей</h2>
-      <p class="section-lead center">Нажмите на фото, чтобы рассмотреть детали</p>
-      <div class="gallery__grid" id="galleryGrid">
-        <img src="images/img08.jpg" alt="Рыжий волнистый парик" loading="lazy">
-        <img src="images/img06.jpg" alt="Рыжий кудрявый парик" loading="lazy">
-        <img src="images/img20.jpg" alt="Кудрявый парик с колорированием" loading="lazy">
-        <img src="images/img16.jpg" alt="Длинный золотистый парик" loading="lazy">
-        <img src="images/img22.jpg" alt="Платиновый парик с чёлкой" loading="lazy">
-        <img src="images/img21.jpg" alt="Рыжий парик с чёлкой" loading="lazy">
-        <img src="images/img05.jpg" alt="Серебристый каре-парик" loading="lazy">
-        <img src="images/img17.jpg" alt="Коллаж: пепельный парик" loading="lazy">
-        <img src="images/img18.jpg" alt="Коллаж: золотистый парик" loading="lazy">
-        <img src="images/img19.jpg" alt="Коллаж: русый парик с чёлкой" loading="lazy">
-        <img src="images/img09.jpg" alt="Парик на манекене с чёлкой" loading="lazy">
-        <img src="images/img10.jpg" alt="Прямой тёмный парик" loading="lazy">
-        <img src="images/img01.jpg" alt="Естественный образ с накладными волосами" loading="lazy">
+      <p class="section-lead center">Листайте фото в сторону, чтобы посмотреть больше образов</p>
+      <div class="gallery__carousel">
+        <button class="carousel-nav" id="galleryPrev" aria-label="Предыдущее фото">‹</button>
+        <div class="gallery__grid" id="galleryGrid">
+          <img src="images/img08.jpg" alt="Рыжий волнистый парик" loading="lazy">
+          <img src="images/img06.jpg" alt="Рыжий кудрявый парик" loading="lazy">
+          <img src="images/img20.jpg" alt="Кудрявый парик с колорированием" loading="lazy">
+          <img src="images/img16.jpg" alt="Длинный золотистый парик" loading="lazy">
+          <img src="images/img22.jpg" alt="Платиновый парик с чёлкой" loading="lazy">
+          <img src="images/img21.jpg" alt="Рыжий парик с чёлкой" loading="lazy">
+          <img src="images/img05.jpg" alt="Серебристый каре-парик" loading="lazy">
+          <img src="images/img17.jpg" alt="Коллаж: пепельный парик" loading="lazy">
+          <img src="images/img18.jpg" alt="Коллаж: золотистый парик" loading="lazy">
+          <img src="images/img19.jpg" alt="Коллаж: русый парик с чёлкой" loading="lazy">
+          <img src="images/img09.jpg" alt="Парик на манекене с чёлкой" loading="lazy">
+          <img src="images/img10.jpg" alt="Прямой тёмный парик" loading="lazy">
+        </div>
+        <button class="carousel-nav" id="galleryNext" aria-label="Следующее фото">›</button>
       </div>
     </div>
   </section>
@@ -166,10 +167,10 @@
   <section class="atelier" id="atelier">
     <div class="container">
       <p class="eyebrow center">Ателье</p>
-      <h2 class="center">Шоурум и мастерская</h2>
+      <h2 class="center">Наша мастерская</h2>
       <p class="section-lead center">Большой выбор моделей в наличии — можно примерить сразу несколько вариантов</p>
       <div class="atelier__grid">
-        <img src="images/img03.jpg" alt="Стеллаж с париками в шоуруме" loading="lazy">
+        <img src="images/img03.jpg" alt="Стеллаж с париками в ателье" loading="lazy">
         <img src="images/img04.jpg" alt="Интерьер ателье" loading="lazy">
       </div>
       <div class="atelier__row">
